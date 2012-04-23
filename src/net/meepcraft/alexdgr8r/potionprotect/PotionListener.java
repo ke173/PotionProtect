@@ -1,5 +1,7 @@
 package net.meepcraft.alexdgr8r.potionprotect;
 
+/*Meepcraft Potion Project, Copyright 2012 Alexdgr8r and Kedalion*/
+
 import org.bukkit.entity.ThrownPotion;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -17,7 +19,7 @@ public class PotionListener implements Listener {
 		ThrownPotion potion = event.getPotion();
 		for (PotionEffect effect : potion.getEffects()) {
 			effect.getType().getId();
-			if(potion.inGround) //Just found away to find the exact location - Kedalion
+			if(potion.inGround) //Just found away to find the exact location
 			{ 
 			float findloc = potion.getLocation();
 			
