@@ -1,4 +1,4 @@
-package net.meepcraft.alexdgr8r.potionprotect;
+ package net.meepcraft.alexdgr8r.potionprotect;
 
 /*Meepcraft Potion Project, Copyright 2012 Alexdgr8r and Kedalion*/
 
@@ -21,14 +21,15 @@ public class PotionListener implements Listener {
 			effect.getType().getId();
 			if(potion.inGround) //Just found away to find the exact location
 			{ 
-			float findloc = potion.getLocation();
+			float findloc = potion.getLocation(); /*Now that we can play with this, it makes it a lot
+			easier to count plots etc.*/
 			
 			
-			return findloc;
+			return findloc; /*I just returned this for debugging purposes. 
+			Nobody will see it in the acual plugin*/
 				
 				}
 			}
 		}
-
 	}
 }
