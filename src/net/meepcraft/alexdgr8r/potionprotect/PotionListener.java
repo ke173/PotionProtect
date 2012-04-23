@@ -15,13 +15,16 @@ public class PotionListener implements Listener {
 		ThrownPotion potion = event.getPotion();
 		for (PotionEffect effect : potion.getEffects()) {
 			effect.getType().getId();
-			if(potion.inGround //Just found away to find the exact location - Kedalion
+			if(potion.inGround) //Just found away to find the exact location - Kedalion
+			{ 
 			float findloc = potion.getLocation();
+			
 			
 			return findloc;
 				
+				}
 			}
 		}
-	}
 
+	}
 }
