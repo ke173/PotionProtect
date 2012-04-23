@@ -11,6 +11,8 @@ import org.bukkit.entity.Entity
 public class PotionListener implements Listener {
 	
 	@EventHandler(priority = EventPriority.NORMAL)
+	 private double damage = 2.0D; /*We're probably going to need this in the future, used Double because 
+	 it's more tightley nit*/
 	public void potionSplash(PotionSplashEvent event) {
 		ThrownPotion potion = event.getPotion();
 		for (PotionEffect effect : potion.getEffects()) {
