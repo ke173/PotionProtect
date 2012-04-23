@@ -33,3 +33,5 @@ public class PotionListener implements Listener {
 		}
 	}
 }
+
+/* By the way, we should give a sneak peak of this to the Meepcraft Community! Everyone's excited for 6.2*/
